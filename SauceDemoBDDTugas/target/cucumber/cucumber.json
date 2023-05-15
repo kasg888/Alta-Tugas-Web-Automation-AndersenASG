@@ -1,0 +1,206 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4834814500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Buying something",
+        "description": "",
+        "id": "buying;buying-something",
+        "after": [
+          {
+            "result": {
+              "duration": 731945700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 385577800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User already on website sauce demo",
+            "match": {
+              "location": "LoginSteps.verifyLandingPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 426768800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User input \"standard_user\" as userName and input \"secret_sauce\" as password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 12
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 50
+                }
+              ],
+              "location": "LoginSteps.inputCredential(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 79413700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User already on sales page",
+            "match": {
+              "location": "SalesSteps.verifySalesPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 427007500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User choosing items on sales page",
+            "match": {
+              "location": "SalesSteps.filterPageztoa()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 53275100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User already on Your Cart page",
+            "match": {
+              "location": "YourCartSteps.verifyYourCartPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 137587700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User adjusting items in cart",
+            "match": {
+              "location": "YourCartSteps.removingItem()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33682700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User already on checkout your information page",
+            "match": {
+              "location": "CheckoutYiSteps.verifyCheckoutYiPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 340630600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User input first name \"Andersen\" and last name \"Sebastian\" then the zip code \"59567\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Andersen",
+                  "offset": 23
+                },
+                {
+                  "val": "Sebastian",
+                  "offset": 48
+                },
+                {
+                  "val": "59567",
+                  "offset": 78
+                }
+              ],
+              "location": "CheckoutYiSteps.inputCheckoutInfo(String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 26148000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User already on checkout overview page",
+            "match": {
+              "location": "CheckoutOvrSteps.verifyCheckoutPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 66038000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User ready to checkout",
+            "match": {
+              "location": "CheckoutOvrSteps.finalCheckout()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 26755500,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User finish checktout",
+            "match": {
+              "location": "CheckoutComSteps.verifyFinishCheckout()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Buying",
+    "description": "As a user I want to buy something in website sauce demo",
+    "id": "buying",
+    "keyword": "Feature",
+    "uri": "features/Buying.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Buying"
+      }
+    ]
+  }
+]
